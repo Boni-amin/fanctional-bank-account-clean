@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
+</head>
+<body>
+    <header class="bg-white my-10">
+        <h1 class="text-5xl font-medium text-purple-700 align-middle text-center py-2">Let's get some <span class="font-medium text-green-400">Mony</span> !!</h1>
+    </header>
+   <main class="w-3/5 mx-auto">
+       <!-- balance transetion -->
+    <Section>
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-pink-400 p-10 text-white font-medium text-2xl rounded" >
+                <p>Deposit</p>
+                <p class="text-4xl">$<span id="diposit-total">00</span> </p>
+            </div>
+            <div class="bg-yellow-400 p-10 text-white font-medium text-2xl rounded" >
+                <p>Widthdaw</p>
+                <p class="text-4xl">$<span id="widthdraw-total">00</span> </p>
+            </div>
+            <div class="bg-indigo-400 p-10 text-white font-medium text-2xl rounded" >
+                <p>Balance</p>
+                <p class="text-4xl">$<span id="balance-total">00</span> </span> </p>
+            </div> 
+        </div>
+    </Section>
+    <!-- balance widthdraw and deposit  -->
+    <section class="mt-10">
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="py-10 bg-indigo-300 px-8 rounded">
+                <h2 class="text-2xl font-bold text-purple-700 mb-3">Deposit Here</h2>
+                <input class="block mb-2 w-full border border-red-400 px-2 py-1 rounded" type="text" name="" placeholder="$ deposit amount you want to deposit" id="diposit-input">
+                <button id="deposit-button" class="border rounded bg-red-700 py-1 px-2 font-medium text-white">Deposit</button>
+            </div>
+            <div class="py-10 bg-green-300 px-8 rounded">
+                <h2 class="text-2xl font-bold text-purple-700 mb-3">Widthdraw Here</h2>
+                <input class="block mb-2 w-full border border-red-400 px-2 py-1 rounded" type="number" name="" placeholder="$ deposit amount you want to deposit" id="widthdraw-input">
+                <button id="widthdraw-button" class="border rounded bg-red-700 py-1 px-2 font-medium text-white">Widthdraw</button>
+            </div>
+        </div>
+    </section>
+   </main>
+    
+
+   <!-- js  -->
+   <script src="js/apps.js"></script>
+</body>
+</html>
